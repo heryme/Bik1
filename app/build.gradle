@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        /*config {
+            keyAlias 'Project Biker'
+            keyPassword 'projectbiker'
+            storeFile file('D:/Project/Keystore/Project Biker/key_store_project_biker.jks')
+            storePassword 'projectbiker'
+        }*/
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId 'com.project.biker'
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 2
+        versionName "1.0.1"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            zipAlignEnabled true
+            //signingConfig signingConfigs.config
+        }
+        debug {
+            //signingConfig signingConfigs.config
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('org.apache.httpcomponents:httpmime:4.3.6') {
+        exclude module: 'httpclient'
+    }
+    //For Bar Code And Qr Code
+    compile 'com.android.support:appcompat-v7:26.0.1'
+    compile 'com.android.support:design:26.0.1'
+    compile 'com.intuit.sdp:sdp-android:1.0.2'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.firebase:firebase-messaging:11.0.2'
+    compile 'com.google.android.gms:play-services-maps:11.0.2'
+    compile 'com.google.android.gms:play-services-location:11.0.2'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.apache.httpcomponents:httpclient-android:4.3.5'
+    compile 'com.google.firebase:firebase-core:11.0.2'
+    compile 'com.google.firebase:firebase-crash:11.0.2'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:cardview-v7:26.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':lib')
+}
+
+apply plugin: 'com.google.gms.google-services'

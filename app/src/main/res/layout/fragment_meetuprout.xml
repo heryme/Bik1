@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+<!--    <RelativeLayout
+        android:id="@+id/rr_frg_marker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:visibility="invisible">
+
+        <com.websoptimization.biker.utils.RoundRectCornerImageView
+            android:id="@+id/ivMarkerDialogCornerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_alignParentBottom="false"
+            android:scaleType="fitXY" />
+
+        <com.websoptimization.biker.utils.CustomBoldTextView
+            android:id="@+id/tvNotificationName"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:background="@drawable/roundded_bg_wight"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Test" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivRowInviteFrndProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:src="@drawable/man"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+
+    </RelativeLayout>-->
+
+
+
+
+    <com.project.biker.utils.CustomButton
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stop_button_background"
+        android:textSize="@dimen/font_normal"
+        android:text="@string/Stop"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <com.project.biker.utils.CustomButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/start_button_background"
+        android:textSize="@dimen/font_normal"
+        android:text="@string/Start"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_15sdp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/ivMyLocation"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:tint="@color/gps_logo_color"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gps_location" />
+
+    </RelativeLayout>
+
+
+    <!-- <ImageView
+         android:id="@+id/ivMyLocation"
+         android:layout_margin="15dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:tint="@color/gps_logo_color"
+         android:src="@drawable/ic_gps_location"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentEnd="true"/>
+ -->
+</RelativeLayout>

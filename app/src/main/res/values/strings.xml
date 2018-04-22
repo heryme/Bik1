@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">Project Biker</string>
+    <string name="title_activity_login">Project Biker</string>
+    <string name="map_key">AIzaSyCHyWyeBmsg05qu-f9cXrFSFVaOwjbR1gg<!--AIzaSyBfd2jN2ElV361Ks_6Zf-exH8SOeKF7XYs--></string>
+
+    <!-- Facebook Login-->
+
+    <!-- <string name="facebook_app_id">118582775419843</string>-->
+    <!--<string name="facebook_app_id">807374342794672</string>-->
+    <string name="facebook_app_id">205635533296742</string>
+
+    <string name="fb_button_text">Login With Facebook</string>
+
+    <!-- Navigation Drawer-->
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Strings related to login -->
+    <string name="hint_login_username">Email</string>
+    <string name="hint_login_password">Password</string>
+    <string name="hint_login_confirm_password">Confirm Password</string>
+    <string name="hint_login_activation_key">Activation Key</string>
+    <string name="sign_up_with_us">Create account</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="sign_in">sign in</string>
+
+
+    <!-- Register -->
+    <string name="hint_register_first_name">Firstname</string>
+    <string name="hint_register_last_name">Lastname</string>
+    <string name="hint_register_email">Email</string>
+    <string name="btn_register">Sign Up</string>
+
+    <!-- Forgot Password Activity -->
+    <string name="btn_forgot_pwd">Send</string>
+    <string name="tv_forgot_pwd">Forgot Password</string>
+    <string name="tv_sign_up">CREATE ACCOUNT</string>
+
+
+    <!--Tabs -->
+    <string name="home">HOME</string>
+    <string name="ride">RIDE</string>
+    <string name="benefits">BENEFITS</string>
+    <string name="profile">PROFILE</string>
+
+
+    <!-- MainActivity -->
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+    <string name="not_sharing_location">YOU ARE NOT SHARING YOUR LOCATION</string>
+    <string name="notSeeWindow">YOU WILL NOT SEE THIS WINDOW AGAIN </string>
+    <string name="snackbar_no_internet">No internet connection!</string>
+    <string name="filter_action">android.net.conn.CONNECTIVITY_CHANGE</string>
+
+    <!-- Dialog -->
+    <string name="information">INFORMATION</string>
+    <string name="location">LOCATION</string>
+    <string name="you_are_share_your_loc">YOU ARE SHARING YOUR LOCATION</string>
+    <string name="blue_is_you">BLUE IS YOU</string>
+    <string name="green_is_your_frnd">GREEN IS YOUR FRIENDS</string>
+    <string name="res_is_othe_frnd">PURPLE IS OTHER BIKERS THAT IS SHARING THEIR POSITION WITH EVERYONE</string>
+    <string name="dialog_footer">TO CHANGE YOUR PREFERENCE GO TO SETTING IN THE TOP LEFT MENU </string>
+    <string name="user_name_validatinon">Enter UserName</string>
+    <string name="password_validation">Enter Password</string>
+    <string name="firstname_validation">Enter FirstName</string>
+    <string name="lastname_validation">Enter LastName</string>
+    <string name="email_validation">Enter Email Id</string>
+    <string name="city_validation">Enter City</string>
+    <string name="state_validation">Enter State</string>
+    <string name="country_validation">Enter Country</string>
+    <string name="location_limit">Place service limit is over, try after 24hour.</string>
+    <string name="start_ride_alertmessage">Are you sure want to start ride ?</string>
+    <string name="stop_ride_alertmessage">Are you sure want to stop ride ?</string>
+    <string name="logout_alert_messag">Are you sure you want to logout?</string>
+    <string name="ride_complete_alert">Ride just completed</string>
+    <string name="alert_not_device_register">Your device is not registered for notification please try again</string>
+
+
+    <!-- Error message -->
+    <string name="error_msg_space_not_allowed">Space is not allowed</string>
+    <string name="error_msg_password_must_be_six_digit">Password must be 6 digit</string>
+    <string name="err_msg_re_enter_password_dosnt_match">Password doesn\'t match</string>
+
+
+    <!-- All Hint text -->
+
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="hint_country">Country</string>
+    <string name="btn_submit">Submit</string>
+    <string name="hint_enter_email">Enter Email</string>
+    <string name="hint_enter_valid_email">Enter Valid Email</string>
+    <string name="hint_enter_password">Enter Password</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_re_enter_password">Re-enter password</string>
+    <string name="hint_enter_fellow_code">Enter Fellow Code</string>
+    <string name="hint_enter_activation_code">Enter Activation Code</string>
+    <string name="hint_enter_login_pin">Enter Login Pin</string>
+    <string name="hint_enter_registered_email">Enter registered email</string>
+    <string name="hint_enter_verification_code">Enter verification code </string>
+    <string name="hint_enter_4_digite_pin">Enter 4 - digit pin </string>
+    <string name="hint_re_enter_pin">Re-enter pin </string>
+    <string name="hint_enter_first_name">Enter first name</string>
+    <string name="hint_enter_last_name">Enter last name</string>
+    <string name="hint_enter_phone_number">Enter phone number</string>
+    <string name="hint_enter_activation_key">Enter Activation Key</string>
+    <string name="hint_enter_installation">Enter installation code</string>
+    <string name="hint_enter_uninstall_code">Enter uninstallation code</string>
+    <string name="hint_old_password">Enter old password:</string>
+    <string name="hint_new_password">Enter new password:</string>
+    <string name="hint_reenter_password">Re-Enter password:</string>
+    <string name="hint_search_app">Type to search application</string>
+    <string name="btn_un_friend">Unfriend</string>
+    <string name="btn_cancel">Cancel friend request</string>
+    <string name="btn_accept">ACCEPT</string>
+    <string name="btn_reject">REJECT</string>
+    <string name="btn_send_request">SEND FRIEND REQUEST </string>
+    <string name="ride_frg_title">INVITE FRIENDS TO RIDE</string>
+    <string name="friend_list_title">FRIENDS</string>
+
+
+    <!--Benefits Fragment -->
+    <string name="place_title">PLACES YOU PROJECT BIKER MEMBERSHIP PAYS OFF!</string>
+    <string name="see_more">SEE MORE</string>
+    <string name="no_nenefit_found">No benefit found</string>
+
+    <!--Details Benefits-->
+    <string name="benefit_msg">Circle K gives you as a Project Biker member the Project Biker BurgerMeny for just 89,-NOK!</string>
+    <string name="benefit_msg2">Show you membersship card in the profile section in the app!</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile_title">PROFILE</string>
+    <string name="editProfile_title">EDIT PROFILE</string>
+    <string name="setting">SETTINGS</string>
+    <string name="edit">EDIT</string>
+    <string name="status">MEMBERSHIP STATUS</string>
+    <string name="qr_code">QR CODE</string>
+    <string name="bar_code">BAR CODE</string>
+    <string name="lbl_take_photo">Take Photo</string>
+    <string name="lbl_choose_from_gallery">Choose from Gallery</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="dialog.some.thing.wrong">Please choose another image from gallery.</string>
+    <string name="nav_edit_profile">Edit Profile</string>
+    <string name="addPhoto">Add Photo!</string>
+    <string name="takePhoto">Take Photo</string>
+    <string name="selectFromGallery">Choose from Gallery</string>
+
+    <!-- Edit Profile -->
+    <string name="lbl_male">Male</string>
+    <string name="lbl_female">Female</string>
+    <string name="lbl_gender">Gender :</string>
+    <string name="other_image">"Supported image file format are jpg,png,jpeg,gif"</string>
+
+    <!-- Dialog Meeting Location -->
+    <string name="meeting_location">Set meetup spot</string>
+    <string name="where_are_we_going">Where are we going?</string>
+    <string name="off_line">You are offline. please click "OK" and switch online from top right corner.</string>
+
+
+    <!-- Home Fragment -->
+    <string name="location_setting">Setting</string>
+    <string name="gps_network_not_enabled">Your location sharing service is off from setting, so please click on \"Settings\" and on this service, otherwise your friends can\'t see your updated location.</string>
+    <string name="internet_message">Check Internet Connection</string>
+    <string name="markerYou">YOU</string>
+    <string name="markerYouTitle">you</string>
+
+
+    <!-- Meet up fragment-->
+    <string name="set_meeting_location">DRAG TO SET MEETING </string>
+    <string name="set_destination">DRAG TO SET DESTINATION</string>
+    <string name="selectMeetUpSpotAndDestination">*Select MeetUp Spot and Destination Point</string>
+    <string name="selectMeetUpSpot">*Select MeetUp Spot</string>
+    <string name="selectDestination">*Select Destination Point</string>
+    <string name="dateFormate">yyyy-MM-dd HH:mm</string>
+
+
+    <!-- MeetUpRout -->
+    <string name="Start">START</string>
+    <string name="Stop">STOP</string>
+    <string name="you">YOU</string>
+    <string name="meetHere">MEET HERE</string>
+    <string name="meetupPoint">MEETUP POINT</string>
+    <string name="destination">DESTINATION</string>
+
+
+    <!-- Notification Fragment -->
+
+    <string name="no_invitation_found">No Invitation Found</string>
+    <string name="meetup_text">Meet Up : </string>
+    <string name="destination_text">Destination :</string>
+
+    <!-- Ride Fragment -->
+    <string name="no_rider_found">No biker found</string>
+    <string name="selectRider"> Please select at least one rider</string>
+
+
+    <!-- Dialog Utility -->
+    <string name="OK">OK</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="auto_start_message">Enable Biker application autostart permission to share your location to your friends </string>
+
+    <!--- Friends Fragment -->
+    <string name="friend_title">MY FRIEND LIST</string>
+    <string name="no_friend_available">No friends available</string>
+
+    <!-- Friend Invitation Adapter -->
+    <string name="msg_sent_you_friend_request">sent you a friend request.</string>
+    <string name="msg_sent_you_invitation">has sent you invitation to join ride from</string>
+    <string name="msg_un_friend">Are you sure, You want to remove</string>
+    <string name="msg_as_friend">as friend ?</string>
+
+    <!--- Activation Activity -->
+    <string name="title_activation">ACTIVATE YOUR ACCOUNT</string>
+    <string name="btn_login">Login</string>
+
+
+
+</resources>

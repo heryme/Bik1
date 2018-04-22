@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rrFrgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp">
+
+        <com.project.biker.utils.RoundRectCornerImageView
+            android:id="@+id/ivMarkerDialogCornerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_135sdp"
+            android:layout_alignParentBottom="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_cover_pic" />
+
+
+        <!--<com.websoptimization.biker.utils.RoundRectCornerImageView
+            android:id="@+id/multiSelectView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_135sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/selectedimg2"
+            android:visibility="visible" />
+-->
+        <com.project.biker.utils.CustomBoldTextView
+            android:id="@+id/tvRowInviteFrndNAme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/_190sdp"
+            android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:background="@drawable/roundded_bg_wight"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="@dimen/_50sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivRowInviteFrndProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:src="@drawable/man"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+    <ImageView
+        android:id="@+id/iv_row_friend_list_remove_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_cancel"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

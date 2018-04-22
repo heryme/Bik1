@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/notification"
+            android:title="Ride Invitations"
+            android:icon="@drawable/invitation"/>
+        <item
+            android:id="@+id/friend_invitation"
+            android:title="Friend Invitations"
+            android:icon="@drawable/ic_usr"/>
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/ic_exit"/>
+    </group>
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_map_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/rounded_bg"
+        android:padding="@dimen/_5sdp">
+
+        <com.project.biker.utils.CustomBoldTextView
+            android:id="@+id/tvFrgFriendListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/friend_title"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/tvFrgFriendListTitle"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@color/login_line"
+            android:layout_marginBottom="@dimen/_3sdp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvFrgFriendList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line2" />
+
+        <TextView
+            android:id="@+id/tvFriendsList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/no_friend_available"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/rounded_bg"
+        android:text="@string/see_more"
+        android:textSize="@dimen/font_normal"
+        android:textStyle="bold" />-->
+
+
+    <ImageView
+        android:id="@+id/ivFrgFriendListNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:src="@drawable/ic_navigation"
+        android:visibility="gone" />
+
+</RelativeLayout>

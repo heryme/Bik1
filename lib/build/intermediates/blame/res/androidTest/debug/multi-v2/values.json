@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,12,13,14,15,16,17,18,19,25,36,40,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,153,204,256,315,703,751,823,867,939,996,1048,1073,1376,1986,2184,2376",
+                        "endLines": "2,3,4,5,6,12,13,14,15,16,17,18,24,35,39,43,52",
+                        "endColumns": "52,50,51,58,58,47,71,43,71,56,51,24,12,12,12,12,12",
+                        "endOffsets": "148,199,251,310,369,746,818,862,934,991,1043,1068,1371,1981,2179,2371,2908"
+                    }
+                }
+            ]
+        }
+    ]
+}

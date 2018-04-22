@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_map_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/rounded_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rrFrgBenefitDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.project.biker.utils.RoundRectCornerImageView
+                        android:id="@+id/ivBenefitItemCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_130sdp"
+                        android:layout_alignParentBottom="false"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_cover_pic" />
+
+
+                    <com.project.biker.utils.CustomBoldTextView
+                        android:id="@+id/tvStoreName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="@dimen/_190sdp"
+                        android:layout_alignBottom="@+id/ivBenefitItemCover"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_45sdp"
+                        android:layout_marginStart="@dimen/_45sdp"
+                        android:background="@drawable/roundded_bg_wight"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/_4sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingLeft="@dimen/_50sdp"
+                        android:paddingRight="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_4sdp"
+                        android:text=""
+                        android:textStyle="bold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivBenefitStorLogo"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_alignBottom="@+id/ivBenefitItemCover"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:paddingLeft="@dimen/_10sdp"
+                        android:src="@drawable/man"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="2dp" />
+
+
+                </RelativeLayout>
+
+
+                <com.project.biker.utils.CustomTextView
+                    android:id="@+id/tvBenefitAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:text="Vitanminveien 1B,0485 Oslo"
+                    android:textSize="@dimen/font_normal" />
+
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/h_login_view_line_common"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:background="@color/login_line" />
+
+               <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:src="@drawable/ic_back"
+        android:visibility="visible" />
+</RelativeLayout>

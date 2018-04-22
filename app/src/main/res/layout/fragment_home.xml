@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment
+        android:id="@+id/maphome"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/ivMyLocation"
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:tint="@color/gps_logo_color"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_gps_location" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/marker_dialog"
+        layout="@layout/marker_dialog" />
+
+
+
+  <!--  <ImageView
+        android:id="@+id/ivMyLocation"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/gps_logo_color"
+        android:src="@drawable/ic_gps_location"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>-->
+
+</RelativeLayout>

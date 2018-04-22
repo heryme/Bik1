@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_map_bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <com.project.biker.utils.CustomBoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|bottom"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:text="@string/editProfile_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_title"
+
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@color/login_line" />
+
+            <RelativeLayout
+                android:id="@+id/rr_frg_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+
+
+                <com.project.biker.utils.RoundRectCornerImageView
+                    android:id="@+id/ivMarkerDialogCornerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_alignParentBottom="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_cover_pic" />
+
+                <com.project.biker.utils.CustomBoldTextView
+                    android:id="@+id/tvEditProfileFrgName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="@dimen/_190sdp"
+                    android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    android:background="@drawable/roundded_bg_wight"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/_50sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:text=""  />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivEditProfile"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:src="@drawable/man"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp" />
+
+                <ImageView
+                    android:id="@+id/ivEditProfilePic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@drawable/ic_edit1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"/>
+
+
+
+                <ImageView
+                    android:id="@+id/ivEditProfileEditCover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ivRowInviteFrndProfile"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_edit1" />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@color/login_line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_login1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.project.biker.utils.CustomEditText
+                        android:id="@+id/etEditProfileFname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_username"
+                        android:background="@drawable/rounded_login_view"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:drawableTint="@color/white"
+                        android:hint="@string/hint_register_first_name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@null"
+                        android:maxLength="50"/>
+
+                    <com.project.biker.utils.CustomEditText
+                        android:id="@+id/etEditProfileLname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_username"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_login_view"
+                        android:drawableLeft="@drawable/ic_person"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:drawableTint="@color/white"
+                        android:hint="@string/hint_register_last_name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@null"
+                        android:maxLength="50"/>
+
+
+                    <com.project.biker.utils.CustomEditText
+                        android:id="@+id/etEditProfileEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_username"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_login_view"
+                        android:drawableLeft="@drawable/mail_2"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:hint="@string/hint_register_email"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text="dscvsdv"
+                        android:textColor="@color/darkgray"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@null"
+                      />
+
+                    <RadioGroup
+                        android:id="@+id/rd_edit_profile_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkedButton="@+id/rb_edit_profile_male"
+                        android:orientation="horizontal">
+
+                        <com.project.biker.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/_10sdp"
+                            android:text="@string/lbl_gender"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_normal" />
+
+                        <com.project.biker.utils.CustomRadioButton
+                            android:id="@+id/rb_edit_profile_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/lbl_male"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_normal" />
+
+                        <com.project.biker.utils.CustomRadioButton
+                            android:id="@+id/rb_edit_profile_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lbl_female"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_normal" />
+                    </RadioGroup>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/etEditProfileCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_username"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_login_view"
+                        android:drawableLeft="@drawable/ic_location_city"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:hint="@string/hint_city"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@null" />
+
+                  <!--  <com.websoptimization.biker.utils.CustomEditText
+                        android:id="@+id/etEditProfileState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_username"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_login_view"
+                        android:drawableLeft="@drawable/ic_location_city"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:visibility="gone"
+                        android:hint="@string/hint_state"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@null" />
+
+                    <com.websoptimization.biker.utils.CustomEditText
+                        android:id="@+id/etEditProfileCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_left_username"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rounded_login_view"
+                        android:drawableLeft="@drawable/ic_location_city"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:visibility="gone"
+                        android:hint="@string/hint_country"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@null" />-->
+
+
+                </LinearLayout>
+
+                <com.project.biker.utils.CustomButton
+                    android:id="@+id/btnEditProfileSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:background="@drawable/rounded_button"
+                    android:text="@string/btn_submit"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

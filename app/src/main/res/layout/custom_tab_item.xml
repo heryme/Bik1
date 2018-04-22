@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.project.biker.utils.CustomBoldTextView
+        android:id="@+id/textViewTabItemName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Name"
+        android:textSize="@dimen/_11sdp"/>
+
+<!--    <View
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/_10sdp"/>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

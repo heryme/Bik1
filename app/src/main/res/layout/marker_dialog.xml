@@ -1,0 +1,247 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/tab_main_fragment"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/zxing_transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical">
+
+                      <com.websoptimization.biker.utils.CustomBoldTextView
+                          android:id="@+id/tvDialogHomeUserName"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_alignParentLeft="true"
+                          android:paddingLeft="@dimen/_10sdp"
+                          android:paddingRight="@dimen/_5sdp"
+                          android:paddingTop="@dimen/_5sdp"
+                          android:text="STIAN ULVOY"
+                          android:textColor="@color/dialog_font_color"
+                          android:textSize="@dimen/font_normal"
+                          android:textStyle="bold" />
+
+                      <com.websoptimization.biker.utils.CustomTextView
+                          android:id="@+id/tvDialogHomeBikeName"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/tvDialogHomeUserName"
+                          android:paddingBottom="@dimen/_10sdp"
+                          android:paddingLeft="@dimen/_10sdp"
+                          android:text="Honda VFR800"
+                          android:textSize="@dimen/_10sdp" />
+
+                  </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.project.biker.utils.CustomButton
+                        android:id="@+id/btnUnfriend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/rounded_btn__red_bg"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/btn_un_friend"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+                    <com.project.biker.utils.CustomButton
+                        android:id="@+id/btnSendRequest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/rounded_btn__blue_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/btn_send_request"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+                    <com.project.biker.utils.CustomButton
+                        android:id="@+id/btnCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/rounded_btn__blue_bg"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:text="@string/btn_cancel"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp" />
+                    <LinearLayout
+                        android:id="@+id/ll_acceptReject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+                        <com.project.biker.utils.CustomButton
+                            android:id="@+id/btnAccept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:background="@drawable/rounded_btn__blue_bg"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/btn_accept"
+                            android:layout_marginRight="@dimen/_5sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+                        <com.project.biker.utils.CustomButton
+                            android:id="@+id/btnReject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:background="@drawable/rounded_btn__blue_bg"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/btn_reject"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/h_login_view_line_common"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="#000000" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/rrFrgBenefitDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.project.biker.utils.RoundRectCornerImageView
+                    android:id="@+id/ivMarkerDialogCornerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_alignParentBottom="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_cover_pic" />
+
+
+                <com.project.biker.utils.CustomBoldTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="@dimen/_190sdp"
+                    android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_45sdp"
+                    android:layout_marginStart="@dimen/_45sdp"
+                    android:background="@drawable/roundded_bg_wight"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/_4sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_50sdp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_4sdp"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivRowInviteFrndProfile"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="@dimen/_10sdp"
+                    android:src="@drawable/man"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp" />
+
+
+            </RelativeLayout>
+
+
+            <!-- <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content">
+
+
+                 <com.websoptimization.biker.utils.RoundRectCornerImageView
+                     android:id="@+id/ivMarkerDialogCornerView"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/_150sdp"
+                     android:layout_marginBottom="@dimen/_5sdp"
+                     android:layout_marginLeft="@dimen/_5sdp"
+                     android:layout_marginRight="@dimen/_5sdp"
+                     android:background="@color/white"
+                     android:scaleType="fitXY"
+                     android:src="@drawable/ic_cover_pic" />
+
+                 <de.hdodenhof.circleimageview.CircleImageView
+                     android:id="@+id/ivRowInviteFrndProfile"
+                     android:layout_width="@dimen/_100sdp"
+                     android:layout_height="@dimen/_100sdp"
+                     android:layout_alignBottom="@id/ivMarkerDialogCornerView"
+                     android:layout_margin="@dimen/_5sdp"
+                     android:paddingLeft="@dimen/_3sdp"
+                     android:src="@drawable/man"
+                     app:civ_border_color="@color/cardview_light_background"
+                     app:civ_border_width="1dp" />
+
+             </RelativeLayout>
+ -->
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

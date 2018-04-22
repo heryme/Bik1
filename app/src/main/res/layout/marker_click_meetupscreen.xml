@@ -1,0 +1,52 @@
+<RelativeLayout android:id="@+id/card_view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/tab_main_fragment"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rr_frg_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+        <com.project.biker.utils.RoundRectCornerImageView
+            android:id="@+id/ivMarkerDialogCornerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_alignParentBottom="false"
+            android:scaleType="fitXY"
+           />
+
+        <com.project.biker.utils.CustomBoldTextView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_45sdp"
+            android:background="@drawable/roundded_bg_wight"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Test"
+            android:id="@+id/textView" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivRowInviteFrndProfile"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignBottom="@+id/ivMarkerDialogCornerView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="@dimen/_10sdp"
+            android:src="@drawable/man"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

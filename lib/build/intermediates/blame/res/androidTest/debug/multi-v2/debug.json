@@ -1,0 +1,65 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-land_values-land.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\bundles\\debug\\res\\values-land\\values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "47",
+                        "endOffsets": "98"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-large-land-v4_values-large-land-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\bundles\\debug\\res\\values-large-land-v4\\values-large-land-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "47",
+                        "endOffsets": "98"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-large-v4_values-large-v4.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\bundles\\debug\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "47",
+                        "endOffsets": "98"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\Hiren\\Android Rahul\\Biker\\lib\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,12,13,14,15,16,17,18,19,25,36,40,44",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,153,204,256,315,703,751,823,867,939,996,1048,1073,1376,1986,2184,2376",
+                        "endLines": "2,3,4,5,6,12,13,14,15,16,17,18,24,35,39,43,52",
+                        "endColumns": "52,50,51,58,58,47,71,43,71,56,51,24,12,12,12,12,12",
+                        "endOffsets": "148,199,251,310,369,746,818,862,934,991,1043,1068,1371,1981,2179,2371,2908"
+                    }
+                }
+            ]
+        }
+    ]
+}

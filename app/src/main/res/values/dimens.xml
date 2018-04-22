@@ -1,0 +1,45 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- login_activity.xml -->
+
+    <dimen name="margin_login_common">30dp</dimen>
+    <dimen name="padding_login_common">10dp</dimen>
+
+    <dimen name="h_login_view_line_common">1dp</dimen>
+    <dimen name="height_iv_tms">50dp</dimen>
+
+    <dimen name="width_iv_tms">200dp</dimen>
+
+
+    <dimen name="margin_top_iv_tms">50dp</dimen>
+    <dimen name="margin_top_view_line">10dp</dimen>
+    <dimen name="margin_left_right_login_view_common">15dp</dimen>
+
+    <dimen name="drawable_padding_left_right">15dp</dimen>
+
+    <dimen name="margin_top_login_icon_below_view">10dp</dimen>
+
+    <dimen name="padding_tv_login">10dp</dimen>
+    <dimen name="h_tv_login">50dp</dimen>
+
+    <dimen name="padding_login_edit_text">10dp</dimen>
+
+    <dimen name="margin_left_username">5dp</dimen>
+    <dimen name="margin_left_password">5dp</dimen>
+
+    <dimen name="margin_login_button">15dp</dimen>
+
+
+
+    <!--Font Size -->
+    <dimen name="font_normal">16sp</dimen>
+    <dimen name="font_title">20sp</dimen>
+    <dimen name="font_extra_title">25sp</dimen>
+
+    <dimen name="facebook_textsize">10sp</dimen>
+
+
+</resources>
